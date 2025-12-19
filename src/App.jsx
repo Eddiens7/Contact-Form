@@ -1,34 +1,43 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <main>
+      <h1>Contact Us</h1>
+
+      <form>
+        <div className="personal-info">
+          <label htmlFor="name">First Name *</label>
+          <input type="text" name="name" id="name"/>
+
+          <label htmlFor="last-name">Last Name *</label>
+          <input type="text" name="last-name" id="last-name" />
+        </div>
+
+        <div className="email">
+          <label htmlFor="email">Email Address *</label>
+          <input type="email" name="email" id="email" />
+        </div>
+
+        <div className="query">
+          <input type="radio" name="general" id="general"/>
+          <label htmlFor="general">General Enquiry</label>
+
+          <input type="radio" name="support" id="support"/>
+          <label htmlFor="support">Support Request</label>
+        </div>
+
+        <div className="send-message">
+          <label htmlFor="message">Message *</label>
+          <textarea name="message" id="message" ></textarea>
+        </div>
+
+        <div className="terms">
+          <input type="checkbox" name="terms" id="terms" />
+          <label htmlFor="terms">I consent to being contacted by the team *</label>
+        </div>
+
+        <input type="submit" value="Submit" />
+      </form>
+    </main>
   )
 }
 
