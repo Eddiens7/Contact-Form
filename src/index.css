@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #E0F1E7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+main{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+main h1{
+    margin-bottom: 30px;
+}
+
+form{
+    width: 350px;
+}
+
+form input{
+    padding: 10px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #888;
+    margin: 5px 0 25px 0; 
+    outline: none;
+}
+
+form input[type="text"]:focus,input[type="email"]:focus , textarea#message:focus{
+    border:2px solid #8bc0c8;
+
+}
+
+label, span{
+    color: #545555;
+}
+
+.personal-info, .email, .send-message{
+    display: flex;
+    flex-direction: column;
+}
+
+.query {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.query input[type="radio"] {
+  display: none;
+}
+
+.query label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  border: 2px solid #cfd8dc;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  transition: all 0.2s ease;
+  margin: 10px 0;
+}
+
+
+.query label::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  border: 2px solid #cfd8dc;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.query input[type="radio"]:checked + label {
+  border-color: #8bc0c8;
+  background-color: #f6fbfc;
+}
+
+.query input[type="radio"]:checked + label::before {
+  background-color: #8bc0c8;
+  border-color: #8bc0c8;
+}
+
+.send-message{
+    margin-top: 20px;
+}
+
+textarea#message{
+    margin-top: 10px;
+    width: 100%;
+    height: 200px;
+    resize: none;
+    padding: 10px;
+    outline: none;
+    border-radius: 5px;
+}
+
+.terms {
+  display: flex;
+  gap: 10px;
+}
+
+.terms input{
+    width: 20px;
+}
+
+.terms input:checked{
+    accent-color: #0C7D69;
+}
+
+.terms label{
+    margin: 17px 0;
+}
+
+input[type="submit"]{
+    background-color: #0C7D69;
+    color: white;
+    font-weight: bold;
+    width: 100%;
+    height: 50px;
+    cursor: pointer;
+    transition: transform .3s ease;
+    border: none;
+    outline: none;
+}
+
+input[type="submit"]:hover{
+    background-color: #0a6353;
+}
+
+input[type="submit"]:active{
+    transform: scale(.95);
+}

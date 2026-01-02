@@ -17,12 +17,13 @@ function App() {
           <input type="email" name="email" id="email" />
         </div>
 
+        <span>Query Type *</span>
         <div className="query">
-          <input type="radio" name="general" id="general"/>
-          <label htmlFor="general">General Enquiry</label>
+            <input type="radio" name="query" id="general"/>
+            <label htmlFor="general">General Enquiry</label>
 
-          <input type="radio" name="support" id="support"/>
-          <label htmlFor="support">Support Request</label>
+            <input type="radio" name="query" id="support"/>
+            <label htmlFor="support">Support Request</label>
         </div>
 
         <div className="send-message">
