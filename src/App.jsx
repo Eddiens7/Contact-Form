@@ -5,11 +5,15 @@ function App() {
 
       <form>
         <div className="personal-info">
-          <label htmlFor="name">First Name *</label>
-          <input type="text" name="name" id="name"/>
+          <div className="name">
+            <label htmlFor="name">First Name *</label>
+            <input type="text" name="name" id="name"/>
+          </div>
 
-          <label htmlFor="last-name">Last Name *</label>
-          <input type="text" name="last-name" id="last-name" />
+          <div className="last-name">
+            <label htmlFor="last-name">Last Name *</label>
+            <input type="text" name="last-name" id="last-name" />
+          </div>
         </div>
 
         <div className="email">

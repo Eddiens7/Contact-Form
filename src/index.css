@@ -24,7 +24,8 @@ main h1{
 }
 
 form{
-    width: 350px;
+    width: 70vw;
+    max-width: 600px;
 }
 
 form input{
@@ -46,6 +47,11 @@ label, span{
 }
 
 .personal-info, .email, .send-message{
+    display: flex;
+    flex-direction: column;
+}
+
+.name, .last-name{
     display: flex;
     flex-direction: column;
 }
@@ -143,4 +149,29 @@ input[type="submit"]:hover{
 
 input[type="submit"]:active{
     transform: scale(.95);
+}
+
+@media screen and (min-width:960px) {
+    
+    .personal-info{
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .name, .last-name{
+        width: 100%;
+    }
+
+
+
+    .query{
+        flex-direction: row;
+        gap: 20px;
+    }
+
+     .query label{
+        width: 100%;
+    }
+
+  
 }
