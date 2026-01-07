@@ -7,26 +7,26 @@ function App() {
         <div className="personal-info">
           <div className="name">
             <label htmlFor="name">First Name *</label>
-            <input type="text" name="name" id="name"/>
+            <input type="text" name="name" id="name" required/>
           </div>
 
           <div className="last-name">
             <label htmlFor="last-name">Last Name *</label>
-            <input type="text" name="last-name" id="last-name" />
+            <input type="text" name="last-name" id="last-name" required />
           </div>
         </div>
 
         <div className="email">
           <label htmlFor="email">Email Address *</label>
-          <input type="email" name="email" id="email" />
+          <input type="email" name="email" id="email" required/>
         </div>
 
         <span>Query Type *</span>
         <div className="query">
-            <input type="radio" name="query" id="general"/>
+            <input type="radio" name="query" id="general" required/>
             <label htmlFor="general">General Enquiry</label>
 
-            <input type="radio" name="query" id="support"/>
+            <input type="radio" name="query" id="support" required/>
             <label htmlFor="support">Support Request</label>
         </div>
 
